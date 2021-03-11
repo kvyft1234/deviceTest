@@ -1,12 +1,20 @@
 <!DOCTYPE HTML>
 <html>
+<head>
+<script>
+function execute(){
+eval(document.getElementById("script").innerText);
+}
+</script>
+<style>
+#script{
+height: 90%;
+width : 100%;
+</style>
+</head>
 <body>
 <script>
-function a(b){
-document.write("?");
-return a((b+"꿻").repeat(b.length))
-}
-document.write(a("ㅎ"));
-</script>
+<textarea id="script"></textarea>
+<button onclick="execute()">
 </body>
 </html>
