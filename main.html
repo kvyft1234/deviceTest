@@ -1,11 +1,6 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<script>
-function execute(){
-eval(document.getElementById("script").innerText);
-}
-</script>
 <style>
 #script{
 height : 90%;
@@ -15,6 +10,10 @@ width : 100%;
 </head>
 <body>
 <textarea id="script" rows=50 cols=50>//write</textarea>
-<button onclick="execute()">execute</button>
+<button onclick="execute()">execute</button><script>
+function execute(){
+eval(document.getElementById("script").innerText);
+}
+</script>
 </body>
 </html>
