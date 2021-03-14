@@ -10,9 +10,9 @@ width : 100%;
 </head>
 <body>
 <textarea id="script" rows=50 cols=50>//write</textarea>
-<button onclick="function(){
+<button onclick="(function(){
 eval(document.getElementById("script").innerText);
 alert("execute");
-}">execute</button>
+})()">execute</button>
 </body>
 </html>
